@@ -3,7 +3,7 @@ pub fn process_joltage(input: &str) -> u64 {
     let mut result: Vec<char> = vec![];
     let mut begin_search_index = 0;
     let mut max_search_length = chars_vec.len() - 12;
-    let mut max_value_index = 0;
+    let mut max_value_index;
 
     while result.len() != 12 {
         max_value_index = begin_search_index;
