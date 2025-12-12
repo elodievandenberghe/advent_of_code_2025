@@ -15,7 +15,6 @@ pub fn check_paper(inputstr: Vec<Vec<char>>) -> u64 {
                 if input[i][j] == '@' {
                     let mut count = 0;
 
-                    // Check each neighbor carefully
                     if i > 0 && input[i - 1][j] == '@' {
                         count += 1;
                     }
